@@ -3,4 +3,19 @@
 @import "../../../node_modules/bootstrap/scss/bootstrap";
 
 
-@import './layout/index.scss'
+// layout 共同框架
+@import "layout/header";
+@import "layout/swiper";
+@import "layout/subscribe";
+@import "layout/footer";
+
+// component 元件
+@import "component/navbar";
+@import "component/progress";
+
+
+// page 頁面
+@import "page/index";
+@import "page/product";
+@import "page/popular";
+@import "page/check";
