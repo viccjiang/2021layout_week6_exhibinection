@@ -69,13 +69,13 @@ $colors: (
 
 // scss-docs-start theme-color-variables
 $primary:       #630834; // $blue !default;
-$secondary:     $gray-600 !default;
+$secondary:     #E31277; //$gray-600 !default;
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
 $danger:        $red !default;
-$light:         $gray-100 !default;
-$dark:          $gray-900 !default;
+$light:         #EFEFEF ;//$gray-100 !default;
+$dark:          #707070 ;//$gray-900 !default;
 // scss-docs-end theme-color-variables
 
 // scss-docs-start theme-colors-map
@@ -88,7 +88,7 @@ $theme-colors: (
   "danger":     $danger,
   "light":      $light,
   "dark":       $dark,
-  "pink-light": #E31277
+  
 ) !default;
 // scss-docs-end theme-colors-map
 
@@ -261,7 +261,9 @@ $spacers: (
   7: $spacer * 2.25, //36
   8: $spacer 3 ,//48
   9: $spacer * 3.25,//52
-  10: $spacer * 3.5 //56
+  10: $spacer * 3.5, //56
+  11: $spacer * .75, //12
+  12: $spacer * 3.75 //60
 
 ) !default;
 
@@ -1097,10 +1099,10 @@ $pagination-border-radius-lg:       $border-radius-lg !default;
 
 // scss-docs-start card-variables
 $card-spacer-y:                     $spacer !default;
-$card-spacer-x:                     $spacer !default;
+$card-spacer-x:                     0;//$spacer !default;
 $card-title-spacer-y:               $spacer * .5 !default;
-$card-border-width:                 $border-width !default;
-$card-border-radius:                $border-radius !default;
+$card-border-width:                 0;//$border-width !default;
+$card-border-radius:                0;//$border-radius !default;
 $card-border-color:                 rgba($black, .125) !default;
 $card-inner-border-radius:          subtract($card-border-radius, $card-border-width) !default;
 $card-cap-padding-y:                $card-spacer-y * .5 !default;
