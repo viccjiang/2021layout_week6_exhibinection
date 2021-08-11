@@ -14176,6 +14176,14 @@ fieldset:disabled .btn {
      object-fit: cover;
 }
 
+.swiper-wrapper :nth-child(3) img {
+  display: block;
+  width: 255px;
+  height: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .subscribe {
   background-image: url("../../assets/images/12.jpg");
   height: 400px;
