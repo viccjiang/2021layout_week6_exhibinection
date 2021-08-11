@@ -1,0 +1,37 @@
+.nav-scroller {
+
+    // Small devices (landscape phones, 576px and up)
+    @media (min-width: 576px) { 
+        height: 3.25rem; /* 隱藏下方捲軸 */
+        overflow-y: hidden; 
+        border-bottom: 0px solid #707070;
+    }
+
+    // Medium devices (tablets, 768px and up)
+    @media (min-width: 768px) { 
+        height: 3.25rem; /* 隱藏下方捲軸 */
+        overflow-y: hidden; 
+        border-bottom: 1px solid #707070;} 
+
+    // Large devices (desktops, 992px and up)
+    @media (min-width: 992px) {
+    height: 3.25rem; /* 隱藏下方捲軸 */
+    overflow-y: hidden;  
+    border-bottom: 1px solid #707070;} 
+}
+
+.nav-scroller .nav {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-bottom: 1rem; /* 隱藏下方捲軸 */
+    overflow-x:auto;
+    white-space: nowrap;
+
+}
+
+.nav-scroller a:hover {
+ border-bottom:2px #E31277 solid;
+}
+
+
+

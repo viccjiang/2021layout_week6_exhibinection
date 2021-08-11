@@ -1,0 +1,14 @@
+.banner{
+    background-image: url("../../assets/images/10.jpg");
+    height: 480px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.popular-img img{
+    max-width: 350px;
+    height: 350px;
+    object-fit: cover;  
+     
+}

@@ -2,8 +2,9 @@
 
 
 @import "../../../node_modules/bootstrap/scss/functions";
-@import "./base";
+
 @import "./helpers/variables";
+@import "./helpers/base";
 
 @import "../../../node_modules/bootstrap/scss/bootstrap";
 
