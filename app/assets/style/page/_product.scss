@@ -1,0 +1,22 @@
+.product{
+    @include media-breakpoint-up(xs) {  
+        height: 100%;
+    }
+
+    @include media-breakpoint-up(sm) {  
+        height: 503px;
+    }
+
+    @include media-breakpoint-up(md) { 
+        height: 417px;
+    }
+
+    @include media-breakpoint-up(lg) {   
+        height: 417px;
+    }
+}
+
+.product-img{
+    width: 100%;
+    display: block; 
+}
