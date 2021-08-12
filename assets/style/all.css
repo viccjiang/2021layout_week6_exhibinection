@@ -14949,10 +14949,55 @@ fieldset:disabled .btn {
 }
 
 .popular-img img {
-  max-width: 350px;
-  height: 350px;
+  max-width: 100%;
+  height: auto;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+@media (min-width: 576px) {
+  .popular-img img {
+    max-width: 100%;
+    height: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+
+@media (min-width: 768px) {
+  .popular-img img {
+    max-width: 250px;
+    height: 250px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+
+@media (min-width: 992px) {
+  .popular-img img {
+    max-width: 350px;
+    height: 350px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+
+@media (min-width: 1200px) {
+  .popular-img img {
+    max-width: 350px;
+    height: 350px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+
+@media (min-width: 1400px) {
+  .popular-img img {
+    max-width: 350px;
+    height: 350px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
 }
 
 /*# sourceMappingURL=all.css.map */
