@@ -7,8 +7,68 @@
 }
 
 .popular-img img{
-    max-width: 350px;
-    height: 350px;
-    object-fit: cover;  
-     
+
+    @include media-breakpoint-up(xs) {  
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;   }
+    @include media-breakpoint-up(sm) {  
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;   }
+    @include media-breakpoint-up(md) { 
+        max-width: 250px;
+        height: 250px;
+        object-fit: cover;   }
+    @include media-breakpoint-up(lg) {   
+        max-width: 350px;
+        height: 350px;
+        object-fit: cover;   }
+    @include media-breakpoint-up(xl) { 
+        max-width: 350px;
+        height: 350px;
+        object-fit: cover;   }
+    @include media-breakpoint-up(xxl) {
+        max-width: 350px;
+        height: 350px;
+        object-fit: cover;   }
+    
+
+    
+    // @media (min-width: 360px) { 
+    //     max-width: 100%;
+    //     height: auto;
+    //     object-fit: cover;  
+    // }
+
+    // @media (min-width: 375px) { 
+    //     max-width: 100%;
+    //     height: auto;
+    //     object-fit: cover;  
+    // }
+
+    //  // Small devices (landscape phones, 576px and up)
+    //  @media (min-width: 576px) { 
+    //     max-width: 100%;
+    //     height: auto;
+    //     object-fit: cover;  
+    // }
+
+    // // Medium devices (tablets, 768px and up)
+    // @media (min-width: 768px) { 
+    //     max-width: 100%;
+    // height: auto;
+    // object-fit: cover;  
+    // }
+
+    // // Large devices (desktops, 992px and up)
+    // @media (min-width: 992px) { 
+    // max-width: 350px;
+    // height: 350px;
+    // object-fit: cover;  
+    // }
+    
+
+
+
 }
