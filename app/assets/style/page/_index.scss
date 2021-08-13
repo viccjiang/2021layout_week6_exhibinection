@@ -129,3 +129,21 @@
         font-size: 20px;
     }
 }
+
+.offcanvas{
+    width: 100%;
+    @include media-breakpoint-up(xs) {  
+        width: 100%;
+
+    }
+    @include media-breakpoint-up(md) {   
+        width: 50%;
+    }
+    @include media-breakpoint-up(lg) {   
+        width: 540px;
+    }
+}
+
+.object-fit{
+    object-fit: cover;
+}
