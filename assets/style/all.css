@@ -15329,6 +15329,28 @@ fieldset:disabled .btn {
   }
 }
 
+.offcanvas {
+  width: 100%;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .offcanvas {
+    width: 50%;
+  }
+}
+
+@media (min-width: 992px) {
+  .offcanvas {
+    width: 540px;
+  }
+}
+
+.object-fit {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .product {
   height: 100%;
 }
