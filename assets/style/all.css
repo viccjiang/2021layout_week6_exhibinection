@@ -15375,7 +15375,10 @@ fieldset:disabled .btn {
 
 .product-img {
   width: 100%;
+  height: 285px;
   display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 /*# sourceMappingURL=all.css.map */
