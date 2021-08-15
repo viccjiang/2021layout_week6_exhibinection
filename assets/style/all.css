@@ -15381,4 +15381,20 @@ fieldset:disabled .btn {
      object-fit: cover;
 }
 
+.popular img {
+  width: 100%;
+  height: 559px;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.popular-imgfluid {
+  width: 100%;
+  height: 400px;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 /*# sourceMappingURL=all.css.map */
