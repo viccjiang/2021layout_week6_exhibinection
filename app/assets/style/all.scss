@@ -11,9 +11,11 @@
 
 // layout 共同框架
 @import "layout/header";
-@import "layout/swiper";
 @import "layout/subscribe";
 @import "layout/footer";
+
+// swiper 套件
+@import "vendor/swiper";
 
 // component 元件
 @import "component/navbar";
