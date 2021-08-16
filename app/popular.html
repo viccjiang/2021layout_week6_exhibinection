@@ -20,8 +20,8 @@ current: index
 </div>
 
 <main>
-    <div class="popular-ticket container">
-        <div class="row row-cols-1 row-cols-md-2 g-1">
+    <div class="popular-ticket container ">
+        <div class="row d-flex justify-content-center align-items-center row-cols-1 row-cols-md-2 g-1">
             <div class="col">
                 <div class="card">
                     <img src="./assets/images/1.jpg" class="card-img-top" alt="...">
@@ -32,18 +32,58 @@ current: index
                     </div>
                 </div>
             </div>
-            <div class="col">
-                <div class="row">
-                    <div class="col-md-6">111</div>
-                    <div class="col-md-6">222</div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6">121</div>
-                    <div class="col-md-6">121</div>
+            <div class="col ">
+                <div class="row ">
+                    <div class="col-md-6 ">
+                        <div class="input-group ">
 
+                            <div class="input-group-prepend">
+                                <button class="btn btn-outline-black rounded-0 border-0 py-3" type="button"
+                                    id="button-addon1">
+                                    <span class="material-icons">remove</span>
+                                </button>
+                            </div>
+
+                            <input type="text" class="form-control border-0 text-center my-auto shadow-none"
+                                placeholder="" aria-label="Example text with button addon"
+                                aria-describedby="button-addon1" value="01">
+
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-black rounded-0 border-0 py-3" type="button"
+                                    id="button-addon2">
+                                    <span class="material-icons">add</span>
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 ">
+                        <p>NT$350</p>
+                        <p>票種</p>
+                        <ul class="d-flex">
+                            <li>學生</li>
+                            <li>全票</li>
+                            <li>愛心</li>
+                        </ul>
+
+                    </div>
                 </div>
+                <div class="row d-flex flex-row mb-5">
+                    <div class="col-6 d-grid">
+                        <button type="button" class=" btn btn-outline-secondary ">收藏展覽</button>
+                    </div>
+                    <div class="col-6 d-grid">
+                        <button type="button" class="btn btn-secondary ">購買票券</button>
+
+                    </div>
+                </div>
+
             </div>
+
+
         </div>
+
     </div>
 
     <div class=" container mb-5">
