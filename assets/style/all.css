@@ -15397,4 +15397,16 @@ fieldset:disabled .btn {
      object-fit: cover;
 }
 
+.popular-ticket-img {
+  width: 100%;
+  height: 256px;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.popular-ticket-type a:hover {
+  border-bottom: 1px solid #E31277;
+}
+
 /*# sourceMappingURL=all.css.map */
