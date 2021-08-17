@@ -6,58 +6,397 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Boostrap Index</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="./assets/style/all.css">
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              Dropdown
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-          </li>
-        </ul>
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
+
+  <nav class="container navbar navbar-expand-lg navbar-light bg-white  py-3 py-md-5">
+    <h1 class="navbar-brand position-absolute m-0">
+      <a href="index.html">
+        EXHIBINECTION
+      </a>
+    </h1>
+
+    <button class="d-none navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class=" collapse navbar-collapse bg-white custom-header-md-open d-flex justify-content-end  align-items-center"
+      id="navbarNav">
+      <ul class="navbar-nav d-none d-md-inline-flex justify-content-md-end flex-row">
+        <li class="nav-item p-0">
+          <a class="nav-link p-0 fs-6 " href="./product.html">Sign in</a>
+        </li>
+
+        <li class="nav-item ms-5">
+          <a class="  nav-link p-0 fs-6" href="./popular.html">Sign up</a>
+        </li>
+      </ul>
+
+      <!-- 用 modal 客製 -->
+      <!-- <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+        aria-controls="offcanvasRight"><span class="material-icons md-24">
+          confirmation_number
+        </span>
+      </button> -->
+
+
+      <!-- offcanvas 客製 -->
+      <a class="d-flex justify-content-end  ms-5 position-relative" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" href="#">
+        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary"> 3
+        </span>
+        <span class="material-icons md-24">
+          confirmation_number
+        </span>
+      </a>
+
+
+      <div class="offcanvas offcanvas-end  bg-black  p-6" tabindex="-1" id="offcanvasRight"
+        aria-labelledby="offcanvasRightLabel">
+
+        <div class="offcanvas-header text-light">
+          <h5 id="offcanvasRightLabel">Cart List</h5>
+          <button type="button" class="btn-close btn-close-white text-reset " data-bs-dismiss="offcanvas"
+            aria-label="Close"></button>
+        </div>
+
+        <div class="offcanvas-body">
+          <div class="card mb-3 ">
+            <button type="button" class=" btn-close text-reset " data-bs-dismiss="offcanvas"
+              aria-label="Close"></button>
+            <div class="row g-0 px-6 ">
+              <div class="col-4">
+
+                <div class="ratio ratio-1x1">
+
+                  <img src="./assets/images/1.jpg" class="img-fluid object-fit" alt="...">
+                </div>
+
+              </div>
+              <div class="col-6">
+                <div class="card-body py-0">
+                  <h5 class="card-title">2020 台味設計展</h5>
+                  <h5 class="card-title">01 JUN — 31 OCT</h5>
+                  <div class="d-md-flex justify-content-md-between">
+                    <p>全票</p>
+                  </div>
+                  <h4>NT$350</h4>
+                </div>
+              </div>
+              <div class="col-2">
+                <div class="d-md-flex align-items-md-center">
+                  <span class="material-icons">remove</span>
+                  01
+                  <span class="material-icons">add</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="card mb-3 ">
+            <button type="button" class=" btn-close text-reset " data-bs-dismiss="offcanvas"
+              aria-label="Close"></button>
+            <div class="row g-0 px-6 ">
+              <div class="col-4">
+
+                <div class="ratio ratio-1x1">
+
+                  <img src="./assets/images/1.jpg" class="img-fluid object-fit" alt="...">
+                </div>
+
+              </div>
+              <div class="col-6">
+                <div class="card-body py-0">
+                  <h5 class="card-title">2020 台味設計展</h5>
+                  <h5 class="card-title">01 JUN — 31 OCT</h5>
+                  <div class="d-md-flex justify-content-md-between">
+                    <p>全票</p>
+                  </div>
+                  <h4>NT$350</h4>
+                </div>
+              </div>
+              <div class="col-2">
+                <div class="d-md-flex align-items-md-center">
+                  <span class="material-icons">remove</span>
+                  01
+                  <span class="material-icons">add</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="card mb-3 ">
+            <button type="button" class=" btn-close text-reset " data-bs-dismiss="offcanvas"
+              aria-label="Close"></button>
+            <div class="row g-0 px-6 ">
+              <div class="col-4">
+
+                <div class="ratio ratio-1x1">
+
+                  <img src="./assets/images/1.jpg" class="img-fluid object-fit" alt="...">
+                </div>
+
+              </div>
+              <div class="col-6">
+                <div class="card-body py-0">
+                  <h5 class="card-title">2020 台味設計展</h5>
+                  <h5 class="card-title">01 JUN — 31 OCT</h5>
+                  <div class="d-md-flex justify-content-md-between">
+                    <p>全票</p>
+                  </div>
+                  <h4>NT$350</h4>
+                </div>
+              </div>
+              <div class="col-2">
+                <div class="d-md-flex align-items-md-center">
+                  <span class="material-icons">remove</span>
+                  01
+                  <span class="material-icons">add</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="offcanvas-footer d-flex pt-6 text-white">
+          <p class="fw-bold">小計</p>
+          <p class="me-auto ">NT$1050</p>
+          <button type="button" class="btn btn-primary ">前往結帳</button>
+        </div>
+
       </div>
+
+
+
     </div>
   </nav>
 
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <div class="row timeline-section">
+          <div class="col-3">
+            <div class="timeline-pointer">
+              <p class="mt-3">確認訂單</p>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="timeline-pointer">
+              <p class="mt-3">填寫訂購資訊</p>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="timeline-pointer">
+              <p class="mt-3">填寫付款資訊</p>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="timeline-pointer">
+              <p class="mt-3">訂單完成</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
 
   
-<h1>這裡是結帳頁面喔 step 1 </h1>
 
-  <footer class="footer">
-    footer
+
+<div class="container">
+    <div class="row d-flex flex-column-reverse d-md-flex flex-md-row">
+        <div class="col-md-8">
+            <div class="row">
+                <div class="col-md-3"">
+                            <img src=" ./assets/images/1.jpg" class="w-100 w-md-100" alt="">
+                </div>
+                <div class="col-md-3">
+                    <p class="mb-0 fw-bold">2020 台味設計展</p>
+                    <p class="mb-0">01 JUN — 31 OCT</p>
+                    <p class="mb-0 text-dark">全票</p>
+                </div>
+                <div class="col-md-6 d-md-flex justify-content-md-between align-items-center">
+                    <p class="mb-0 fw-bold">NT$350</p>
+                    <div class="checkNum d-md-flex justify-content-md-between align-items-center">
+                        <span class="material-icons">remove</span>
+                        01
+                        <span class="material-icons">add</span>
+                    </div>
+                    <div class="btn-close"></div>
+                </div>
+                <div class="col-md-3"">
+                        <img src=" ./assets/images/3.jpg" class="w-100 w-md-100" alt="">
+                </div>
+                <div class="col-md-3">
+                    <p class="mb-0 fw-bold">2020 台味設計展</p>
+                    <p class="mb-0">01 JUN — 31 OCT</p>
+                    <p class="mb-0 text-dark">全票</p>
+                </div>
+                <div class="col-md-6 d-md-flex justify-content-md-between align-items-center">
+                    <p class="mb-0 fw-bold">NT$350</p>
+                    <div class="checkNum d-md-flex justify-content-md-between align-items-center">
+                        <span class="material-icons">remove</span>
+                        01
+                        <span class="material-icons">add</span>
+                    </div>
+                    <div class="btn-close"></div>
+                </div>
+                <div class="col-md-3"">
+                    <img src=" ./assets/images/4.jpg" class="w-100 w-md-100" alt="">
+                </div>
+                <div class="col-md-3">
+                    <p class="mb-0 fw-bold">2020 台味設計展</p>
+                    <p class="mb-0">01 JUN — 31 OCT</p>
+                    <p class="mb-0 text-dark">全票</p>
+                </div>
+                <div class="col-md-6 d-md-flex justify-content-md-between align-items-center">
+                    <p class="mb-0 fw-bold">NT$350</p>
+                    <div class="checkNum d-md-flex justify-content-md-between align-items-center">
+                        <span class="material-icons">remove</span>
+                        01
+                        <span class="material-icons">add</span>
+                    </div>
+                    <div class="btn-close"></div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class=" col-md-4 ">
+            <div class="bg-white ">
+                <h4 class="fw-bold">訂購人資訊</h4>
+                <form>
+                    <div class="mb-2">
+                        <label for="ContactMail" class="text-muted mb-0 form-label">Email</label>
+                        <input type="email" class="form-control rounded-0" id="ContactMail" aria-describedby="emailHelp"
+                            placeholder="example@gmail.com">
+                    </div>
+                    <div class="mb-2">
+                        <label for="ContactName" class="text-muted mb-0 form-label">姓名</label>
+                        <input type="text" class="form-control rounded-0" id="ContactName" placeholder="請輸入姓名">
+                    </div>
+                    <div class="">
+                        <label for="ContactPhone" class="text-muted mb-0 form-label">聯絡電話</label>
+                        <input type="text" class="form-control rounded-0" id="ContactPhone" placeholder="請輸入電話">
+                    </div>
+                    <div class="">
+                        <label for="ContacCode" class="text-muted mb-0 form-label">優惠碼</label>
+                        <input type="text" class="form-control rounded-0" id="ContactPhone" placeholder="TG87526">
+                    </div>
+                </form>
+            </div>
+        </div> -->
+    </div>
+    <div class="row  ">
+        <div class="col-6 col-md-4 d-grid ms-auto">
+            <div class="count d-flex justify-content-md-between fw-bold">
+                <p>小計</p>
+                <p> NT$1050</p>
+            </div>
+            <button type="button" class="btn btn-secondary "><a class="text-white" href="./check2.html">下一步</a>
+            </button>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- <div class="container">
+    <div class="check  ">
+        <div class="row d-md-flex">
+            <div class="col-6 col-md-2 ">
+                <img src="./assets/images/1.jpg" class="w-100 w-md-100" alt="">
+            </div>
+            <div class="col-6 col-md-2">
+                <p class="mb-0 fw-bold">2020 台味設計展</p>
+                <p class="mb-0">01 JUN — 31 OCT</p>
+                <p class="mb-0 text-dark">全票</p>
+            </div>
+            <div class="col-md-4 d-md-flex justify-content-md-between align-items-center">
+                <p class="mb-0 fw-bold">NT$350</p>
+                <div class="checkNum d-md-flex justify-content-md-between align-items-center">
+                    <span class="material-icons">remove</span>
+                    01
+                    <span class="material-icons">add</span>
+                </div>
+                <div class="btn-close"></div>
+            </div>
+        </div>
+        <div class="row d-md-flex">
+            <div class="col-6 col-md-2 ">
+                <img src="./assets/images/3.jpg" class="w-100 w-md-100" alt="">
+            </div>
+            <div class="col-6 col-md-2">
+                <p class="mb-0 fw-bold">2020 台味設計展</p>
+                <p class="mb-0">01 JUN — 31 OCT</p>
+                <p class="mb-0 text-dark">全票</p>
+            </div>
+            <div class="col-md-4 d-md-flex justify-content-md-between align-items-center">
+                <p class="mb-0 fw-bold">NT$350</p>
+                <div class="checkNum d-md-flex justify-content-md-between align-items-center">
+                    <span class="material-icons">remove</span>
+                    01
+                    <span class="material-icons">add</span>
+                </div>
+                <div class="btn-close"></div>
+            </div>
+        </div>
+        <div class="row d-md-flex">
+            <div class="col-6 col-md-2 ">
+                <img src="./assets/images/4.jpg" class="w-100 w-md-100" alt="">
+            </div>
+            <div class="col-6 col-md-2">
+                <p class="mb-0 fw-bold">2020 台味設計展</p>
+                <p class="mb-0">01 JUN — 31 OCT</p>
+                <p class="mb-0 text-dark">全票</p>
+            </div>
+            <div class="col-md-4 d-md-flex justify-content-md-between align-items-center">
+                <p class="mb-0 fw-bold">NT$350</p>
+                <div class="checkNum d-md-flex justify-content-md-between align-items-center">
+                    <span class="material-icons">remove</span>
+                    01
+                    <span class="material-icons">add</span>
+                </div>
+                <div class="btn-close"></div>
+            </div>
+        </div>
+    </div>
+    <div class="row  ">
+        <div class="col-6 col-md-4 d-grid ms-auto">
+            <div class="count d-flex justify-content-md-between fw-bold">
+                <p>小計</p>
+                <p> NT$1050</p>
+            </div>
+            <button type="button" class="btn btn-secondary ">下一步</button>
+        </div>
+    </div>
+</div> -->
+
+
+  <footer class="footer ">
+    <div class="container">
+      <div
+        class="navbar-light bg-white  d-flex align-items-md-center justify-content-start flex-column flex-md-row py-4">
+        <p class="fs-4 mb-0 me-3">EXHIBINECTION </p>
+        <p class=" mb-0 me-auto">© 2020 LOGO All Rights Reserved.</p>
+        <ul class="navbar-nav d-none d-md-inline-flex justify-content-md-end flex-row">
+          <li class="nav-item p-0">
+            <a class="nav-link p-0 fs-6 " href="./product.html">Sign in</a>
+          </li>
+
+          <li class="nav-item ms-5">
+            <a class="  nav-link p-0 fs-6" href="./popular.html">Sign up</a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </footer>
 
   <script src="./assets/js/vendors.js"></script>
