@@ -15498,7 +15498,7 @@ fieldset:disabled .btn {
 }
 
 .open-talk {
-  opacity: 0.75;
+  background-color: #190014CC;
 }
 
 .open-talk img {
