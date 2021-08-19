@@ -15512,7 +15512,7 @@ fieldset:disabled .btn {
 }
 
 /* 實心圓 */
-.checkInfo .timeline-section :nth-child(2) .timeline-pointer::before {
+.checkInfo .timeline-section :nth-child(-n+2) .timeline-pointer::before {
   content: "";
   position: absolute;
   left: 50%;
@@ -15525,6 +15525,21 @@ fieldset:disabled .btn {
   background-color: #e31277;
 }
 
+/* 實心圓 */
+.checkPayment .timeline-section :nth-child(-n+3) .timeline-pointer::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  -webkit-transform: translate(-50%, -30%);
+      -ms-transform: translate(-50%, -30%);
+          transform: translate(-50%, -30%);
+  background-color: #e31277;
+}
+
+/* 實心圓 */
 .banner {
   background-image: url("../../assets/images/10.jpg");
   height: 480px;
