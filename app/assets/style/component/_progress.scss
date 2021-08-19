@@ -48,7 +48,7 @@
 
 
    /* 實心圓 */
-.checkInfo .timeline-section :nth-child(2) .timeline-pointer::before {
+.checkInfo .timeline-section :nth-child(-n+2) .timeline-pointer::before {
   content: "";
   position: absolute;
   left: 50%;
@@ -58,3 +58,27 @@
   transform: translate(-50%, -30%);
   background-color: #e31277;
 } 
+
+   /* 實心圓 */
+   .checkPayment .timeline-section :nth-child(-n+3) .timeline-pointer::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    transform: translate(-50%, -30%);
+    background-color: #e31277;
+  } 
+
+     /* 實心圓 */
+    //  .checkSuccess .timeline-section :nth-child(-n+4) .timeline-pointer::before {
+    //   content: "";
+    //   position: absolute;
+    //   left: 50%;
+    //   width: 8px;
+    //   height: 8px;
+    //   border-radius: 50%;
+    //   transform: translate(-50%, -30%);
+    //   background-color: #e31277;
+    // } 
