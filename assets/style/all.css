@@ -15540,6 +15540,50 @@ fieldset:disabled .btn {
 }
 
 /* 實心圓 */
+.offcanvas {
+  width: 100%;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .offcanvas {
+    width: 50%;
+  }
+}
+
+@media (min-width: 992px) {
+  .offcanvas {
+    width: 540px;
+  }
+}
+
+.offcanvas .customscrollbar {
+  /* width */
+}
+
+.offcanvas .customscrollbar::-webkit-scrollbar {
+  width: 10px;
+}
+
+.offcanvas .customscrollbar::-webkit-scrollbar-track, .offcanvas .customscrollbar::-webkit-scrollbar-thumb {
+  border: 3px solid rgba(255, 255, 255, 0);
+  background-clip: padding-box;
+}
+
+.offcanvas .customscrollbar::-webkit-scrollbar-thumb {
+  background-color: #E31277;
+  border-radius: 10px;
+}
+
+.offcanvas .customscrollbar::-webkit-scrollbar-thumb:hover {
+  border: 2px solid rgba(255, 255, 255, 0);
+}
+
+.offcanvas .customscrollbar::-webkit-scrollbar-track {
+  background-color: #707070;
+  border-radius: 10px;
+}
+
 .banner {
   background-image: url("../../assets/images/10.jpg");
   height: 480px;
@@ -15694,23 +15738,6 @@ fieldset:disabled .btn {
 @media (min-width: 992px) {
   .open-talk-text {
     font-size: 20px;
-  }
-}
-
-.offcanvas {
-  width: 100%;
-  width: 100%;
-}
-
-@media (min-width: 768px) {
-  .offcanvas {
-    width: 50%;
-  }
-}
-
-@media (min-width: 992px) {
-  .offcanvas {
-    width: 540px;
   }
 }
 
