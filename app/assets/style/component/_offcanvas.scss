@@ -1,0 +1,37 @@
+.offcanvas{
+    width: 100%;
+    @include media-breakpoint-up(xs) {  
+        width: 100%;
+
+    }
+    @include media-breakpoint-up(md) {   
+        width: 50%;
+    }
+    @include media-breakpoint-up(lg) {   
+        width: 540px;
+    }
+}
+
+.offcanvas .customscrollbar{
+    /* width */
+&::-webkit-scrollbar {
+    width: 10px;
+}
+    //利用background-clip: padding-box;與border的透明調整 thumb 與 track粗細
+    &::-webkit-scrollbar-track,&::-webkit-scrollbar-thumb {
+    border: 3px solid rgba(255,255,255,0);
+    background-clip: padding-box;
+}
+    &::-webkit-scrollbar-thumb{
+        background-color:#E31277;
+        border-radius: 10px;
+        &:hover{
+            //減少透明border擋住thumb造成在hover的時候thumb變粗
+            border: 2px solid rgba(255,255,255,0);
+        }
+    }
+    &::-webkit-scrollbar-track{
+        background-color: #707070;
+        border-radius: 10px;
+    }
+}

@@ -15,20 +15,20 @@
 
 
 // layout 共同框架
-@import "layout/header";
-@import "layout/subscribe";
-@import "layout/footer";
+@import "./layout/header";
+@import "./layout/subscribe";
 
 // swiper 套件
-@import "vendor/swiper";
+@import "./vendor/swiper";
 
 // component 元件
-@import "component/navbar";
-@import "component/progress";
+@import "./component/navbar";
+@import "./component/progress";
+@import "./component/offcanvas";
 
 
 // page 頁面
-@import "page/index";
-@import "page/product";
-@import "page/popular";
-@import "page/check";
+@import "./page/index";
+@import "./page/product";
+@import "./page/popular";
+@import "./page/check";
